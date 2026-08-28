@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "localllmupdates-gguf-metadata-evidence-v1",
+  "modelArtifactSha256": "46151b52a5cad673d90a00222103254864326c251130b8fc4381d6f34386b3c8",
+  "observedAt": "2026-08-28T14:44:00.000Z",
+  "extraction": {
+    "method": "Bounded GGUF header inspection plus llama.cpp build 10470 verbose metadata load",
+    "scope": "Identity, provenance, architecture, license, general.file_type, and tensor-type counts; tensor payload values were not inspected"
+  },
+  "upstream": {
+    "repository": "unsloth/Qwen3.8-27B-GGUF",
+    "revision": "f1bfb127c64f7072bdd2cad55f258b9c8b2910fe",
+    "revisionApiUrl": "https://huggingface.co/api/models/unsloth/Qwen3.8-27B-GGUF/revision/f1bfb127c64f7072bdd2cad55f258b9c8b2910fe?blobs=true",
+    "fileUrl": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/blob/f1bfb127c64f7072bdd2cad55f258b9c8b2910fe/Qwen3.8-27B-UD-Q2_K_XL.gguf",
+    "fileName": "Qwen3.8-27B-UD-Q2_K_XL.gguf",
+    "fileSizeBytes": 10676423744,
+    "lfsSha256": "46151b52a5cad673d90a00222103254864326c251130b8fc4381d6f34386b3c8",
+    "verification": "Exact file name, byte size, and LFS SHA-256 match the local benchmark artifact"
+  },
+  "header": {
+    "generalArchitecture": "qwen35",
+    "generalName": "Qwen3.8-27B",
+    "generalBasename": "Qwen3.8-27B",
+    "generalDescription": "Renewal of the beloved Qwen model, delivering unmatched intelligence density.",
+    "generalQuantizedBy": "Unsloth",
+    "generalLicense": "apache-2.0",
+    "generalRepoUrl": "https://huggingface.co/unsloth",
+    "baseModelName": "Qwen3.8 27B!",
+    "baseModelOrganization": "Qwen",
+    "baseModelRepoUrl": "https://huggingface.co/Qwen/Qwen3.8-27B"
+  },
+  "quantization": {
+    "distributionLabel": "UD-Q2_K_XL",
+    "llamaBenchModelType": "qwen35 27B Q4_K - Small",
+    "generalFileType": {
+      "value": 14,
+      "llamaCppEnum": "LLAMA_FTYPE_MOSTLY_Q4_K_S",
+      "llamaCppDisplayLabel": "Q4_K - Small",
+      "mappingEvidenceUrl": "https://github.com/ggml-org/llama.cpp/blob/34af94cd9/include/llama.h#L131"
+    },
+    "tensorTypeCounts": {
+      "f32": 360,
+      "q2_K": 1,
+      "q3_K": 1,
+      "iq3_xxs": 288,
+      "iq3_s": 99,
+      "iq4_xs": 21,
+      "iq1_m": 96
+    },
+    "status": "resolved-for-artifact",
+    "note": "There is no identity conflict. UD-Q2_K_XL is Unsloth's distribution label for this exact mixed-tensor artifact. llama.cpp renders general.file_type value 14 as Q4_K - Small; that aggregate metadata label is not a census of the tensor encodings listed above."
+  }
+}
