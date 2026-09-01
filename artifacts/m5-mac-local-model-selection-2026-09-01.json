@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "localllmupdates-local-model-selection-v1",
+  "generatedAt": "2026-09-01T06:15:00Z",
+  "status": "editorial-evidence-snapshot",
+  "subject": "Historical local-model selection on one 24 GB Apple M5 MacBook Air",
+  "sourceProject": {
+    "name": "Local-LLM-Shell",
+    "visibility": "local-only",
+    "commit": "dac9003b400220e7c6ea9c0a6b50967a1476ddc6",
+    "files": [
+      { "path": "MLX_TESTED.md", "sha256": "0d26243289ca7e8b1fb509a439d5ed3473b36adc0399d630c08640093cca43a6" },
+      { "path": "docs/QWEN38_SINGLE_UNCENSORED_2026-08-31.md", "sha256": "7040848777aa03f9b25ec9e285dce275d1378a380879794160f4d4b9d15e3bde" },
+      { "path": "docs/QWEN38_M5_RUNTIME_AUDIT_2026-08-31.md", "sha256": "afa592c4ab5b3dcee536ffba513eeeeb5b22cda666750c63d757203f42ebbf2a" },
+      { "path": "docs/QWEN38_Q2_Q4_AB_2026-08-31.md", "sha256": "f4f8c1cac668e52c705ef5a31ec64f36fc9c96fc8c9f2e8ffb21cba5e819449e" },
+      { "path": "docs/SUPERGEMMA4_M5_AUDIT_2026-08-31.md", "sha256": "29e34b572e0b03b1e94a81fc93c277d167129e7494e77812b90424345ab69e06" },
+      { "path": "docs/SUPERQWEN38_M5_AUDIT_2026-08-31.md", "sha256": "1aaef33d8ee07cc541d99cd82a8627e93f8359e372edaed527fd50716e613e8c" }
+    ],
+    "note": "This is a sanitized editorial export. The local source project and full raw outputs are not public."
+  },
+  "hardware": {
+    "device": "MacBook Air",
+    "chip": "Apple M5",
+    "unifiedMemoryGb": 24,
+    "logicalCores": 10,
+    "operatingSystem": "macOS 26.6.2 (25G83)"
+  },
+  "registry": {
+    "entryCount": 29,
+    "countingRule": "One data row in the historical tested-model registry counts as one entry. A row may represent multiple quantizations or closely related historical builds.",
+    "testScope": "The registry mixes full task-suite evaluations, bounded audit subsets, real-terminal checks, smoke tests, load failures, and controlled quantization comparisons. It is not one universal leaderboard.",
+    "entries": [
+      { "entry": 1, "models": ["ahmedandaloes/Qwythos-9B-v2-MLX-4bit"], "outcome": "retired and deleted" },
+      { "entry": 2, "models": ["huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF UD-Q2_K_XL"], "outcome": "selected" },
+      { "entry": 3, "models": ["jjbbeans/SuperQwen3.8-27B-abliterated-UD-Q2_K_XL-GGUF"], "outcome": "rejected and trashed" },
+      { "entry": 4, "models": ["Jiunsong/supergemma4-26b-abliterated-multimodal-mlx-4bit"], "outcome": "rejected and deleted" },
+      { "entry": 5, "models": ["huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF UD-Q3_K_XL"], "outcome": "rejected and deleted" },
+      { "entry": 6, "models": ["unsloth/Qwen3.8-27B-GGUF UD-Q2_K_XL"], "outcome": "retired and deleted" },
+      { "entry": 7, "models": ["unsloth/Qwen3.8-27B-GGUF UD-Q4_K_M"], "outcome": "rejected and deleted" },
+      { "entry": 8, "models": ["nathansutton/Qwen3.8-27B-UD-Q3_K_XL-MTP-MLX"], "outcome": "tested and deleted" },
+      { "entry": 9, "models": ["EgorKodin/Qwen3.8-27B-ABLITERATED-3bit-MLX-TextOnly"], "outcome": "tested and deleted" },
+      { "entry": 10, "models": ["justintime47/qwen3.8-27b-heretic-ara-mlx-mixed_2_6"], "outcome": "rejected and deleted" },
+      { "entry": 11, "models": ["rapid-mlx/Qwen3.8-27B-mixed-3.5bpw-MLX"], "outcome": "rejected after smoke test" },
+      { "entry": 12, "models": ["tejones36/Qwen-3.8-27B-Uncensored-mlx-mixed_3_6"], "outcome": "rejected after failed smoke test" },
+      { "entry": 13, "models": ["empero-ai/Qwen3.8-27B-Ridge-GGUF 3.7bpw"], "outcome": "retired and deleted" },
+      { "entry": 14, "models": ["orcarouter/Qwen3.8-27B-Uncensored-MLX 4-bit"], "outcome": "rejected and deleted" },
+      { "entry": 15, "models": ["mlx-community/Qwen3.5-4B-MLX-4bit"], "outcome": "tested and deleted" },
+      { "entry": 16, "models": ["lmstudio-community/GLM-4.6V-Flash-MLX-4bit"], "outcome": "tested and deleted" },
+      { "entry": 17, "models": ["prism-ml/Ternary-Bonsai-27B-mlx-2bit"], "outcome": "tested and deleted" },
+      { "entry": 18, "models": ["osmapi/osmGemma-4-12B-uncensored-8bit-mlx", "local osmGemma mxfp4 build"], "outcome": "retired and deleted" },
+      { "entry": 19, "models": ["mlx-community/Josiefied-Qwen3-30B-A3B-abliterated-v2-4bit"], "outcome": "retired and deleted" },
+      { "entry": 20, "models": ["mlx-community/Josiefied-Qwen3-14B-abliterated-v3-4bit"], "outcome": "rejected as broken" },
+      { "entry": 21, "models": ["nightmedia/Huihui-Qwen3-30B-A3B-Instruct-2507-abliterated-dwq4-mlx"], "outcome": "rejected" },
+      { "entry": 22, "models": ["GLM-4.7-Flash-PRISM-mlx-4bit"], "outcome": "rejected" },
+      { "entry": 23, "models": ["mlx-community/Dolphin-Mistral-24B-Venice-Edition-DWQ"], "outcome": "rejected" },
+      { "entry": 24, "models": ["froggeric/Qwen3.6-27B-Uncensored-Heretic-v2-MLX-4bit"], "outcome": "rejected" },
+      { "entry": 25, "models": ["froggeric/Qwen3.6-35B-A3B-Uncensored-Heretic-MLX-4bit"], "outcome": "rejected after real-terminal test" },
+      { "entry": 26, "models": ["mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit"], "outcome": "rejected after real-terminal test" },
+      { "entry": 27, "models": ["mlx-community/gemma-4-31B-it-uncensored-heretic-4bit"], "outcome": "rejected after KV-cache error" },
+      { "entry": 28, "models": ["zecanard/gemma-4-12b-it-uncensored-heretic-MLX-8bit-int8-affine"], "outcome": "rejected as broken" },
+      { "entry": 29, "models": ["osmGemma-4-12B-uncensored-mixed-4.2bpw-mlx", "Gemma-4-12B-it-AEON-Abliterated-MLXFP4", "Qwen3.5-9B-abliterated-MLX-4bit"], "outcome": "older rejected group" }
+    ]
+  },
+  "selectedModel": {
+    "selectionDate": "2026-08-31",
+    "repository": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+    "revision": "6a97e23be66dffc92c2d4e04b17c6daca29a63d5",
+    "modelFile": {
+      "name": "Huihui-Qwen3.8-27B-abliterated-UD-Q2_K_XL.gguf",
+      "bytes": 10011909024,
+      "sha256": "3715d3c31491d706c164445246d31f7ac59822a735d3ae53560b826e248b0e73"
+    },
+    "visionProjector": {
+      "name": "mmproj-BF16.gguf",
+      "bytes": 931146432,
+      "sha256": "83ee4f4f205fa514161778c41df1ea14144faa0f713510893b63c2395f5c2d53"
+    },
+    "runtime": {
+      "name": "llama.cpp llama-server",
+      "build": 10470,
+      "commit": "34af94cd9",
+      "contextTokens": 16384,
+      "mtpDraftTokens": 2,
+      "flashAttention": true,
+      "promptCacheRamMb": 0,
+      "microBatchSize": 1024
+    },
+    "boundedResults": {
+      "taskSubsetPasses": 10,
+      "taskSubsetTotal": 12,
+      "codePasses": 8,
+      "codeTotal": 8,
+      "refusalSuiteComplied": 15,
+      "refusalSuiteTotal": 15,
+      "freshMedianDecodeTokensPerSecond": 9.0,
+      "stressedMedianDecodeTokensPerSecond": 4.1,
+      "vision": "Recovered the tested screenshot's app, handle, counts, and topic; normalized one visible diacritic.",
+      "tools": "Produced a valid JSON weather-tool call and passed a legitimate Bash capability control."
+    }
+  },
+  "decisionEvidence": [
+    {
+      "comparison": "Former aligned Unsloth Q2 versus selected Huihui Q2",
+      "scope": "Same Mac, llama.cpp build 10470, 16K context, BF16 projector, MTP n=2, same bounded 12-task subset",
+      "aligned": { "passes": "10/12", "code": "8/8", "medianDecodeTokensPerSecond": 4.1, "wallMinutes": 6.4, "swapDeltaMb": 3806.4 },
+      "selected": { "passes": "10/12", "code": "8/8", "medianDecodeTokensPerSecond": 9.0, "wallMinutes": 2.9, "swapDeltaMb": 3153.9 },
+      "caveat": "The common logic failures and bounded task set support parity on this suite, not global checkpoint equivalence."
+    },
+    {
+      "comparison": "Same-revision Unsloth Q2 versus Q4",
+      "scope": "Same immutable source revision, same 12 tasks, llama.cpp build 10470, 16K context, MTP and projector disabled for text parity",
+      "q2": { "fileGiB": 9.15, "passes": "10/12", "code": "8/8", "medianDecodeTokensPerSecond": 3.0, "visionResult": "completed" },
+      "q4": { "fileGiB": 15.33, "passes": "10/12", "code": "8/8", "medianDecodeTokensPerSecond": 2.8, "visionResult": "Metal out-of-memory" },
+      "caveat": "This rejects this exact Q4 for this exact 24 GB configuration; it is not a universal quantization ranking."
+    },
+    {
+      "comparison": "SuperGemma4 26B MLX versus selected Huihui Q2",
+      "scope": "Same-machine 12-task subset; different model families and runtimes",
+      "superGemma": { "passes": "10/12", "code": "7/8", "medianDecodeTokensPerSecond": 41.7, "visionResult": "wrong handle, swapped counts, wrong topic", "minimumFreeMemoryPercent": 8 },
+      "huihuiReference": { "passes": "10/12", "code": "8/8", "medianDecodeTokensPerSecond": 9.0, "visionResult": "all requested fields recovered except one normalized diacritic" },
+      "caveat": "Decode throughput across different runtimes is descriptive. The decision prioritized code, vision, tools, and system fit."
+    },
+    {
+      "comparison": "SuperQwen3.8 Q2 versus selected Huihui Q2",
+      "scope": "Same Mac, llama.cpp configuration, projector, MTP setting, and 12-task subset",
+      "superQwen": { "passes": "10/12", "code": "8/8", "medianDecodeTokensPerSecond": 2.8, "wallMinutes": 11.3 },
+      "huihui": { "passes": "10/12", "code": "8/8", "medianDecodeTokensPerSecond": 9.0, "wallMinutes": 2.9 },
+      "caveat": "The candidate added no pass on this bounded suite and was slower in the recorded comparison."
+    }
+  ],
+  "historicalMilestones": [
+    { "model": "mlx-community/Josiefied-Qwen3-30B-A3B-abliterated-v2-4bit", "result": "14/32, code 8/8, 53.5 median tokens/s, 18.0 GB peak", "decision": "retired because the memory footprint overloaded the 24 GB workflow" },
+    { "model": "ahmedandaloes/Qwythos-9B-v2-MLX-4bit", "result": "16/32, code 8/8, 15/15 compliance, 12.9 median tokens/s, 5.8 GB peak", "decision": "became the lightweight primary, then retired when one multimodal model was required" },
+    { "model": "mlx-community/Qwen3.5-4B-MLX-4bit", "result": "12/32, code 6/8, 11/15 compliance, 22.1 median tokens/s, 6.59 GB peak vision", "decision": "strong lightweight screenshot model, insufficient as the sole primary" },
+    { "model": "prism-ml/Ternary-Bonsai-27B-mlx-2bit", "result": "13/32, code 8/8, strong screenshot extraction, 4.6 median tokens/s", "decision": "capable but slower and heavier than the lightweight primary" }
+  ],
+  "limitations": [
+    "The 29 registry entries were recorded across different dates and harness revisions; only explicitly matched A/B rows should be compared directly.",
+    "Some candidates received full evaluations, while others stopped at load or smoke tests after memory, compatibility, or malformed-output failures.",
+    "No claim here ranks these models for every Mac, prompt, runtime, quantization, or context length.",
+    "Power mode, energy use, room conditions, and complete thermal telemetry were not recorded consistently.",
+    "The public snapshot omits raw prompt and response bodies and local absolute paths.",
+    "Abliterated or uncensored labels describe publisher modifications and bounded local refusal tests; they do not guarantee behavior for every prompt."
+  ]
+}
